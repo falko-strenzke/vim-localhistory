@@ -15,10 +15,10 @@ fun! lh#backup_file(name) abort
         " use timestamp
         if has('win32')
             let stamp = printf("¦ %s_%s_%s %s", strftime("%Y"), strftime("%m"),
-                        \                       strftime("%d"), strftime("%H_%M"))
+                        \                       strftime("%d"), strftime("%H_%M_%S"))
         else
             let stamp = printf("¦ %s.%s.%s %s", strftime("%Y"), strftime("%m"),
-                        \                       strftime("%d"), strftime("%H:%M"))
+                        \                       strftime("%d"), strftime("%H:%M:%S"))
         endif
     endif
 
