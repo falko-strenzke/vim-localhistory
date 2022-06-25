@@ -3,6 +3,8 @@
 
 #### Introduction
 
+This is a fork of mg979/vim-localhistory with the addition of a feature to always ensure the creation of a new snapshot, irrespective of the recency of the previous snapshot.
+
 This plugin creates automatic and/or manual backups for your files, in
 predefined paths. Backups are browsed with fzf or built-in `:Explore`.
 
@@ -72,6 +74,11 @@ Activate autobackup after save, if no recent backup is found (frequency in minut
 
     let g:lh_autobackup_frequency = 60
 
+Activate autobackup after save always, irrespective of the value of
+whether a recent backup exists. The value g:lh_autobackup_frequency is
+meaningless is this is set to 1:
+
+    let g:lh_autobackup_frequency = 1
 
 
 

@@ -1,4 +1,6 @@
-*localhistory.txt*  localhistory     Version 0.2.0    Last change: 10 May 2020
+*localhistory.txt*  localhistory     Version 0.3.0    Last change: 25 June 2022
+
+
 
 LOCAL HISTORY - TABLE OF CONTENTS                           *localhistory-toc*
 ==============================================================================
