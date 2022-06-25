@@ -77,6 +77,11 @@ minutes):
 
     `let g:lh_autobackup_frequency = 60`
 
+Activate autobackup after save always, irrespective of the value of
+whether a recent backup exists. The value g:lh_autobackup_frequency is
+meaningless is this is set to 1:
+
+    `let g:lh_autobackup_frequency = 1`
 
 
 COMMANDS                                                *localhistory-commads*

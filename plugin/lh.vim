@@ -26,6 +26,7 @@ endif
 let g:lh_open_mode            = get(g:, 'lh_open_mode', 'edit')
 let g:lh_vert_diff            = get(g:, 'lh_vert_diff', 1)
 let g:lh_autobackup_frequency = get(g:, 'lh_autobackup_frequency', 0)
+let g:lh_autobackup_always    = get(g:, 'lh_autobackup_always', 0)
 let g:lh_autobackup_first     = get(g:, 'lh_autobackup_first', 0)
 let g:lh_autobackup_size      = get(g:, 'lh_autobackup_size', 10240)
 
@@ -47,7 +48,7 @@ augroup plugin-lh
     autocmd!
     autocmd BufEnter * call lh#bufenter()
 
-    if g:lh_autobackup_frequency
+    if g:lh_autobackup_frequency || g:lh_autobackup_always
         autocmd BufWritePost * call lh#auto_backup()
     endif
 augroup END

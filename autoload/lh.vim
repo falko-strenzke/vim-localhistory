@@ -211,7 +211,7 @@ fun! lh#auto_backup() abort
     endfor
 
     " create new backup if the most recent is older than lh_autobackup_frequency
-    if now - recent > g:lh_autobackup_frequency*60
+    if (now - recent > g:lh_autobackup_frequency*60) || g:lh_autobackup_always
         call lh#backup_file('')
     endif
 endfun
